@@ -1,4 +1,4 @@
-# vue-template
+# Creafresh Test Project
 
 > Nuxt.js project
 
