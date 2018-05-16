@@ -43,7 +43,7 @@ export default {
   },
   created() {
     this.$axios
-      .$get("http://creafresh.markupus.tech/wp-json/wp-api-menus/v2/menus/2")
+      .$get("https://creafresh.markupus.tech/wp-json/wp-api-menus/v2/menus/2")
       .then(response => {
         this.items = response.items;
       })

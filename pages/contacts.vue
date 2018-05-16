@@ -11,7 +11,7 @@
 <script>
   export default {
     async asyncData({ app }) {
-      let { data } = await app.$axios.get('http://creafresh.markupus.tech/wp-json/wp/v2/pages/74/?_embed');
+      let { data } = await app.$axios.get('https://creafresh.markupus.tech/wp-json/wp/v2/pages/74/?_embed');
       return {
         pageInfo: data
       }

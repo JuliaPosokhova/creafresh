@@ -16,7 +16,7 @@ export default {
   },
   created() {
     this.$axios
-      .$get("http://creafresh.markupus.tech/wp-json/wp/v2/pages/23/?_embed")
+      .$get("https://creafresh.markupus.tech/wp-json/wp/v2/pages/23/?_embed")
       .then(response => {
         this.jumbotron = response.acf.modules[2].content;
       })

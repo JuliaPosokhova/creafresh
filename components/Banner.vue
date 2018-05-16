@@ -26,7 +26,7 @@ export default {
 
   created() {
     this.$axios
-      .$get("http://creafresh.markupus.tech/wp-json/wp/v2/pages/23/?_embed")
+      .$get("https://creafresh.markupus.tech/wp-json/wp/v2/pages/23/?_embed")
       .then(response => {
         this.bannerData = response.acf.modules[0].hero;
         this.image = response.acf.modules[0].hero.image;

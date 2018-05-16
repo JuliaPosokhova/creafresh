@@ -38,7 +38,7 @@ export default {
   },
   created() {
     this.$axios
-      .$get("http://creafresh.markupus.tech/wp-json/wp/v2/pages/23/?_embed")
+      .$get("https://creafresh.markupus.tech/wp-json/wp/v2/pages/23/?_embed")
       .then(response => {
         let instagramData = response.acf.modules.find(obj => {
           return obj.acf_fc_layout === "instagram_highlight";
