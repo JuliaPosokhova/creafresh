@@ -1,0 +1,52 @@
+//  media queries mixins
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin desktop-s {
+    @media (min-width: #{$desktop-small-width}) {
+        @content;
+    }
+}
+
+@mixin desktop-m {
+    @media (min-width: #{$desktop-medium-width}) {
+        @content;
+    }
+}
+
+@mixin desktop-l {
+    @media (min-width: #{$desktop-large-width}) {
+        @content;
+    }
+}
+
+@mixin desktop-w {
+    @media (min-width: #{$desktop-wide-width}) {
+        @content;
+    }
+}
+
+//  /media queries mixins
+
+%underline {
+    position: relative;
+    &::before {
+        content: '';
+        transition: transform .2s;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: #000;
+        transform: scaleX(0);
+    }
+    &:hover {
+        &::before {
+            transform: scaleX(1);
+        }
+    }
+}

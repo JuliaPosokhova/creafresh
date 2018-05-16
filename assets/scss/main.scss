@@ -1,0 +1,46 @@
+body {
+    font: 400 14px/18px $primary-font;
+    min-height: 100%;
+    color: $dark;
+    &.is-nav-opened {
+        overflow: hidden;
+        .header__holder {
+            background-color: $light;
+        }
+    }
+}
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    @include tablet {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include desktop-s {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @include desktop-l {
+        max-width: 1600px;
+    }
+}
+
+.svg-icon {
+    display: block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.page-enter-active,
+.page-leave-active {
+    transition: opacity .3s;
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
